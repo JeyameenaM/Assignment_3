@@ -1,0 +1,5 @@
+import pandas as pd
+serialnumber = pd.read_csv(r'C:\Users\pdhanush\Downloads\ass3.csv')
+serialnumber = serialnumber.sort_values(by=['Age'], ascending=True)
+serialnumber = serialnumber.dropna()
+print (serialnumber)
